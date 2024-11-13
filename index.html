@@ -108,7 +108,7 @@
 										<img src="images/pic04.jpg" alt="" />
 									</span>
 									<a href="article template.html">
-										<h2>Introduction to CanSat</h2>
+										<h2>Introduction to CanSat and us</h2>
 										<div class="content">
 											<p>What is CanSat (and who are we?)</p>
 										</div>
@@ -123,32 +123,39 @@
 						<div class="inner">
 							<section>
 								<h2>Get in touch</h2>
-								<form method="post" action="#">
+								<form action="https://postmail.invotes.com/send"
+								method="post" id="email_form">
 									<div class="fields">
 										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
+											<input type="text" name="subject" id="name" placeholder="Subject" />
 										</div>
 										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
+											<input type="text" name="reply_to" placeholder="Your Email" />
 										</div>
 										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
+											<textarea name="text" placeholder="Message"></textarea>
+											<input type="hidden" name="access_token" value="2yc5wxkdgq494wqshi93uibi" />
+											<!-- return urls can be fully qualified -OR-
+												start with / for root relative -OR-
+												start with . for url relative --> 
+											<input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+											<input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
+										<li><input type="submit" value="Send" class="primary" id="submit_form"/></li>
 									</ul>
 								</form>
 							</section>
 							<section>
 								<h2>Follow</h2>
 								<ul class="icons">
-									<li><a href="http://instagram.com/_u/beansat_team/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="http://instagram.com/beansat_team/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="mailto:beansat4@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</section>
 							<ul class="copyright">
-								<li>&copy; BeanSat. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; BeanSat. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Email message powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></li>
 							</ul>
 						</div>
 					</footer>
@@ -161,6 +168,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				var submitButton = document.getElementById("submit_form");
+				var form = document.getElementById("email_form");
+				form.addEventListener("submit", function (e) {
+					setTimeout(function() {
+						submitButton.value = "Sending...";
+						submitButton.disabled = true;
+					}, 1);
+				});
+			</script> 
 
 	</body>
 </html>
