@@ -134,17 +134,24 @@
 							<section>
 								<h2>Get in touch</h2>
 								<form action="https://postmail.invotes.com/send"     method="post" id="email_form">
-
-									<input class="field half" type="text" name="subject" placeholder="Subject" />
-									<input class="field half" type="text" name="reply_to" placeholder="Your Email" />
-									<textarea class="field" name="text" placeholder="Message"></textarea>
-									<input type="hidden" name="access_token" value="2yc5wxkdgq494wqshi93uibi" />
-									<input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
-									<input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
-										
-
-									<hr />
-									<input class="primary" id="submit_form" type="submit" value="Send" />
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="subject" placeholder="Subject" />
+										</div>
+										<div class="field half">
+											<input type="text" name="reply_to" placeholder="Your Email" />
+										</div>
+										<div class="field">
+											<textarea class="field" name="text" placeholder="Message"></textarea>
+											<input type="hidden" name="access_token" value="2yc5wxkdgq494wqshi93uibi" />
+											<input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+											<input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+												
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input class="primary" id="submit_form" type="submit" value="Send" /></li>
+									</ul>
 								</form>
 							</section>
 							<section>
