@@ -111,6 +111,23 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				window.onload = function() {
+				// The specific page name to track (e.g., 'home', 'about', 'contact')
+				var pageName = "updates";  // Change this for each page on your website
+			
+				// Replace with your Google Apps Script Web App URL
+				var apiUrl = "https://script.google.com/macros/s/AKfycbwAFESfM9f_9oi2mUwF6XWoZb-mchTX2IyW12QFsOjOgT9vnO5rg6gSN_ptypeDRIAw/exec?page=" + pageName;
+			
+				// Make a GET request to log the page view
+				fetch(apiUrl)
+					.then(response => response.text())
+					.then(data => {
+					console.log(data);  // Optionally, log the response for debugging
+					})
+					.catch(error => console.error('Error logging page view:', error));
+				}
+			</script>
 		<!-- 100% privacy-first analytics -->
 			<scriptasyncdefersrc="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 			<noscript><imgsrc="https://queue.simpleanalyticscdn.com/noscript.gif"alt=""referrerpolicy="no-referrer-when-downgrade" /></noscript>
