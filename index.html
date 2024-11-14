@@ -181,5 +181,24 @@
 				});
 			</script> 
 
+			<script>
+				window.onload = function() {
+				// The specific page name to track (e.g., 'home', 'about', 'contact')
+				var pageName = "index";  // Change this for each page on your website
+			
+				// Replace with your Google Apps Script Web App URL
+				var apiUrl = "https://script.google.com/macros/s/AKfycbzlaCOkW-ZVjb1ATRTq4H2QwCo9xxyCZfNIfB-P57pC6M5jLg2gp6ahYsID0OOhAPld/exec?page=" + pageName;
+			
+				// Make a GET request to log the page view
+				fetch(apiUrl)
+					.then(response => response.text())
+					.then(data => {
+					console.log(data);  // Optionally, log the response for debugging
+					})
+					.catch(error => console.error('Error logging page view:', error));
+				}
+			</script>
+  
+
 	</body>
 </html>
