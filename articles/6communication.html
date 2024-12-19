@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>BeanSat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" href="../images/icon.svg" type="image/x-icon">
+		<noscript><link rel="stylesheet" href="../assets/css/main.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								
+								<a href="../index.html" class="logo">
+									<span class="image">
+										<img src="../images/wide logo.svg" alt="" />
+									</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="../about.html">About</a></li>
+							<li><a href="../updates.html">Updates</a></li>
+							<li><a href="../articles.html">Articles</a></li>
+							<li><a href="../gallery.html">Gallery</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Electronics in Space</h1>
+							<p><i>Written by Jashn Agarwal ..... 13 December 2024</i></p>
+							<span class="image main"><img src="../images/international-space-station-988.jpg" alt="Space technology" /></span>
+							<p>For the past 70 years, humanity has been driven by an ambition to explore the vast expanse of space. We are motivated by the desire to unravel the mysteries of the cosmos and deepen our understanding of the universe, and through this, we have developed many innovative technologies and strategies to turn this vision into reality. However, with development came problems—some of the most fundamental of which being exactly how the complex electronics and circuitry required within our shuttles and satellites were going to survive the dreadful conditions in outer space.</p>
+							<p>The challenges electronics face in space are extreme—more so than any electronics may face on Earth. A primary cause for this is the thing that, ironically, allows us to live—the Sun. The main sequence star, lying at the centre of the solar system we call home, emits 10% ultraviolet waves out of its 1400 W/m^2. This is electromagnetic radiation that is ionising—that is, it has enough energy to knock electrons out of their orbits. The electrical circuits that we rely upon in space depend on the movement of these very electrons for them to work, so their ionisation can at best lead to a small soft error or glitch, or at worse have catastrophic knock-on effects on the rest of the system. If a charged particle strikes a sensitive node in a processor, such as a transistor, memory, or a part of the microprocessor, a single-event upset occurs—this can also lead to bugs or glitches. In large enough doses, high radiation flux can change the logical states of flip-flops and memory cells. Alternatively, being struck by neutrons, protons, alpha particles, or gamma photons can change the arrangement of atoms in the crystal lattice of the component, causing long-lasting damage to parts such as semiconductors or recombinant centres.</p>
+							<p>The average temperature in space is roughly -270℃; the lowest ever recorded naturally on earth was only -88. This frigidity can lead to the expansion of the metals within components and thus malfunctions or them becoming brittle, which can lead to even the destruction of the component itself. The chilliness also can lead to increased resistances within components—something highly dangerous in a circuit where the current needs to be at a precise value, as often required on a space station or in a satellite. Extreme cold causes lithium-ion batteries to deplete quickly, which can lead to insufficient power for the circuit and a malfunction. In stark contrast, a space object is subject to blazing temperatures when directly exposed to the sun. These scorching conditions can lead to the components melting and, obviously, therefore being rendered unable to work.</p>
+							<p>So we can see that there are clearly a multitude of problems that make it incredibly difficult for us to make sure our electronics work in space. Yet if we were still facing them, the CanSat project probably wouldn’t be a thing. So, how did we overcome them?</p>
+							<p>To overcome the tremendous amounts of radiation emitted by the sun, rather than using the traditional semiconductor wafer, the chips are manufactured on insulating substrates such as silicon on sapphire. On a more logical level, programs can be written to detect when such bugs and seemingly random state switches occur and hence mitigate any effects of the ionisation. This is a part of programming known as error-correcting code memory. One way of implementing this is with redundancy—for example, using multiple microprocessors on the same task and comparing their answers, with the different answer being excluded. This can be extended to even shutting down a microprocessor if its answer is consistently different from the others’. On a more basic level, shielding the electronics stops particles or radiation from reaching the components themselves. In particular, to prevent the effect of any neutrons on the circuit, a layer of boron may cover it—this is a metal that can absorb neutrons and therefore prevent these particles from interacting with the circuit. In fact, the James Webb Space Telescope in fact had a “tennis court-sized sun shield” (NASA) made of a thin and lightweight material called Kapton, which prevented the effects of radiation and reduced the temperature that the telescope was exposed to by just shy of 300℃.</p>
+							<p>Although I’ve already mentioned how the JWST could combat the high temperatures, there are other methods to prevent the effects of the extreme cold. For example, extensive testing can be done. We can artificially lower temperatures to—in fact, the lowest such manufactured temperature has been 38 trillionths of a degree above absolute zero—that is, -273.1499962℃. By artificially lowering the temperature in a lab, we can take our circuits and components and see how they would fare in those situations. Thermal control systems and backup heaters are often in place in order for materials and electronics to remain at their designated temperatures. Radioisotopes (nuclear energy), which allow for a long-lasting energy source, typically power these. Large amounts of multi-layered insulation are in place, which both prevent excess heat from entering the spacecraft or too much heat from leaving it, allowing components to function as normal.</p>
+							<p>Unfortunately, our school, fantastic though it may be, is not available to provide us with a tennis court’s worth of Kapton to prevent our BeanSat and its fungi within from annihilation in the face of the heat from the sun. However, the Beansat team, as engineers, can appreciate the tremendous amounts of pioneering that went into developing these mechanisms, and we can certainly be optimistic that any setbacks faced by aerospace engineers in the future will surely be overcome.</p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form action="https://postmail.invotes.com/send"     method="post" id="email_form">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="subject" placeholder="Subject" />
+										</div>
+										<div class="field half">
+											<input type="text" name="reply_to" placeholder="Your Email" />
+										</div>
+										<div class="field">
+											<textarea class="field" name="text" placeholder="Message"></textarea>
+											<input type="hidden" name="access_token" value="2yc5wxkdgq494wqshi93uibi" />
+											<input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+											<input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+												
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input class="primary" id="submit_form" type="submit" value="Send" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="http://instagram.com/beansat_team/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="mailto:beansat4@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; BeanSat. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Email message powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+		<!-- 100% privacy-first analytics -->
+			<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+			<noscript><imgsrc="https://queue.simpleanalyticscdn.com/noscript.gif"alt=""referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
+			<script>
+				window.onload = function() {
+				// The specific page name to track (e.g., 'home', 'about', 'contact')
+				var pageName = "article";  // Change this for each page on your website
+			
+				// Replace with your Google Apps Script Web App URL
+				var apiUrl = "https://script.google.com/macros/s/AKfycbwAFESfM9f_9oi2mUwF6XWoZb-mchTX2IyW12QFsOjOgT9vnO5rg6gSN_ptypeDRIAw/exec?page=" + pageName;
+			
+				// Make a GET request to log the page view
+				fetch(apiUrl)
+					.then(response => response.text())
+					.then(data => {
+					console.log(data);  // Optionally, log the response for debugging
+					})
+					.catch(error => console.error('Error logging page view:', error));
+				}
+			</script>
+
+	</body>
+</html>
