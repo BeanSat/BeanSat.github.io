@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>BeanSat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" href="../images/icon.svg" type="image/x-icon">
+		<noscript><link rel="stylesheet" href="../assets/css/main.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								
+								<a href="../index.html" class="logo">
+									<span class="image">
+										<img src="../images/wide logo.svg" alt="" />
+									</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="../about.html">About</a></li>
+							<li><a href="../updates.html">Updates</a></li>
+							<li><a href="../articles.html">Articles</a></li>
+							<li><a href="../gallery.html">Gallery</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Computer Vision and AI</h1>
+							<p><i>Written by Shyam Ashokan ..... 07 February 2025</i></p>
+							
+							<p>In the world of machine learning, you often hear words like “neural networks” and “artificial intelligence” being thrown around – often in the mission to simulate a brain entirely from computers. But once that’s sorted, we’d ideally want to use it. Perhaps you might think the logical next step is simulating a pair of eyes to see with – that’s where Computer Vision comes in. Computer Vision is a field of computer science and that target the ability of machines to process, analyse and UNDERSTAND visual information from the real world – entirely by algorithms. This involves breaking down images and videos into structured data, and in the case for BeanSat, it’s vital to quantify our fungi growth.</p>
+							<p>But how does it really work? At its core, CV is a multi-step process that involves capturing, processing and interpreting images with a typical pipeline of:</p>
+						
+							<ol>
+								<li>Image Acquisition – Acquiring the raw data from a camera source.</li>
+								<li>Pre-processing – Applying algorithms or filters like noise reduction, resizing and colour correction to enhance the data and make it more easily visible.</li>
+								<li>Feature Extraction – Identify key characteristics like contours, edges, textures and colours.</li>
+								<li>Object Detection and Classification – Recognising and categorising features in the image using Machine Learning models.</li>
+								<li>Post-Processing and Analysis – Using the results to make decisions or predictions.</li>
+							</ol>
+
+							<p>This has been a pivotal breakthrough throughout artificial intelligence, and is ubiquitous throughout modern society. For example in the healthcare sector, CV-powered imaging systems have been used for diagnosing diseases like cancer, identify anomalies in X-rays and even assisting directly with surgeries since the semantic segmentation of the data is far more accurate and quicker than traditional diagnostic methods. In agriculture, CV systems are used to help monitor crop health, detect pests and optimise irrigation. Farmers often use drones or stationary cameras in their fields to maintain crop yields throughout the year and identify any parasites or diseases. And linking back to CanSat, CV has been essential for autonomous navigation and object tracking in extraterrestrial environments like on Mars or the Moon. Robotic systems like the Mars rovers use these technologies to analyse terrain, detect hazards and simply gather data to be processed for the future of science.</p>
+							<p>Clearly, Computer Vision is crucial for several real-world applications, but several challenges arise when implementing CV – alongside rather sophisticated solutions. One major challenge of computer vision is real-time processing and data transmission. Unlike most static datasets that can quickly be sent over to some processing unit, image and especially video data tends to be very large, containing the entire canvas size, individual pixel colour data and their associated metadata which can quickly lead to bandwidth issues and bottlenecks in analysis. To mitigate this, smart buffering techniques and periodic image updates – similar to that of NASA monitors and even our CanSat – are used. For larger scale projects, cloud-processing could even be a consideration to efficiently handle large datasets by partitioning the workload to several computers.</p>
+							<p>Another major challenge is the completely uncontrollable environmental variability. Lighting conditions, camera angles, minor distortions, glare from some light of another component: all of these are factors we had to face with designing the camera software as even minor distortions can impact accuracy immensely. This is particularly an issue for us due to the biological nature of our project, any condensation build-up in the petri dish or lighting that obscures the agar’s colour can immensely affect the machine learning models and our final data. To combat this, techniques like adaptive thresholding, histogram equalisation, machine learning-based segmentation and honestly just manually messing around with the colour data with some smart matrix transformations ensures consistency throughout images. Furthermore, fungal growth and structures are generally very irregular. This makes boundary detection and feature extraction incredibly difficult, but future improvements for our can to improve this may be to use infrared or multispectral imaging to capture the miniscule details of the growths, and using self-learning AI models to in fact predict the growth trends of the strains.</p>
+							<p>The combination of CV and AI in this project has demonstrated the further potential these technologies have to revolutionize biological research. By automating repetitive tasks, accuracy and unlocking new insights, it quite literally paves the way for advancements in agriculture, environmental science and space exploration. Perhaps one day it could even inform the development of life support systems in space-based living conditions and microgravity or other extreme conditions. As AI continues to evolve, more and more gateways into the natural world open - and its potential to unlock new frontiers of knowledge and capability will only grow.</p>
+							
+							
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form action="https://postmail.invotes.com/send"     method="post" id="email_form">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="subject" placeholder="Subject" />
+										</div>
+										<div class="field half">
+											<input type="text" name="reply_to" placeholder="Your Email" />
+										</div>
+										<div class="field">
+											<textarea class="field" name="text" placeholder="Message"></textarea>
+											<input type="hidden" name="access_token" value="2yc5wxkdgq494wqshi93uibi" />
+											<input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+											<input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+												
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input class="primary" id="submit_form" type="submit" value="Send" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="http://instagram.com/beansat_team/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="mailto:beansat4@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; BeanSat. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Email message powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+		<!-- 100% privacy-first analytics -->
+			<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+			<noscript><imgsrc="https://queue.simpleanalyticscdn.com/noscript.gif"alt=""referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
+			<script>
+				window.onload = function() {
+				// The specific page name to track (e.g., 'home', 'about', 'contact')
+				var pageName = "article";  // Change this for each page on your website
+			
+				// Replace with your Google Apps Script Web App URL
+				var apiUrl = "https://script.google.com/macros/s/AKfycbwAFESfM9f_9oi2mUwF6XWoZb-mchTX2IyW12QFsOjOgT9vnO5rg6gSN_ptypeDRIAw/exec?page=" + pageName;
+			
+				// Make a GET request to log the page view
+				fetch(apiUrl)
+					.then(response => response.text())
+					.then(data => {
+					console.log(data);  // Optionally, log the response for debugging
+					})
+					.catch(error => console.error('Error logging page view:', error));
+				}
+			</script>
+
+	</body>
+</html>
